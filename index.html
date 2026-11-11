@@ -1,219 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Amala Joseph | Developer Portfolio</title>
-
-    <meta name="description" content="The personal portfolio of Amala Joseph, an Information Systems student and aspiring web developer.">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amala Joseph — Information Systems student and aspiring software developer.">
+  <title>Amala Joseph | Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
 </head>
-
 <body>
+  <header class="site-header">
+    <a class="logo" href="index.html">AMALA JOSEPH</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="about.html">About</a>
+      <a href="activities.html">Activities</a>
+      <a href="homework.html">Homework</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="index.html" class="logo">Amala<span>.</span></a>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">INFORMATION SYSTEMS STUDENT · ASPIRING DEVELOPER</p>
+      <h1>Hello, I'm Amala.</h1>
+      <p class="intro">I build things for the web and enjoy learning how technology works.</p>
+      <p class="supporting-copy">Currently exploring software development, practical projects and new ideas.</p>
+      <a class="text-link" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
+    </section>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="homework.html">Homework</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="section" id="work">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A SELECTION</p>
+          <h2>Selected work</h2>
+        </div>
+        <span class="muted small">Projects & practice</span>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual visual-book"><span>THE READING ROOM</span></div>
+          <h3>The Reading Room</h3>
+          <p>A digital library concept with a searchable book catalogue.</p>
+          <span class="tag">JavaScript · Webpack</span>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-weather"><span>WEATHER APP</span></div>
+          <h3>Weather App</h3>
+          <p>A weather application for exploring current conditions and forecasts.</p>
+          <span class="tag">JavaScript · API</span>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-todo"><span>TO-DO LIST</span></div>
+          <h3>Todo List</h3>
+          <p>A task manager for organising everyday activities.</p>
+          <span class="tag">JavaScript · Webpack</span>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-game"><span>TIC-TAC-TOE</span></div>
+          <h3>Tic-Tac-Toe</h3>
+          <p>A browser-based game built while practising JavaScript.</p>
+          <span class="tag">HTML · CSS · JavaScript</span>
+        </article>
+      </div>
+      <p class="note">Project links and screenshots can be added as each project is finalised.</p>
+    </section>
 
+    <section class="section compact-section">
+      <p class="eyebrow">WHAT I'M LEARNING</p>
+      <h2>Skills & interests</h2>
+      <div class="skill-list">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span>
+        <span>Java</span><span>Git & GitHub</span><span>Linux</span><span>Databases</span>
+      </div>
+    </section>
 
-    <main>
+    <section class="section contact-section" id="contact">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2>Let's connect.</h2>
+      <p class="muted">I'm always open to learning, collaborating and discussing interesting ideas.</p>
+      <div class="contact-links">
+        <a href="https://github.com/amala2118" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="mailto:">Email ↗</a>
+      </div>
+    </section>
+  </main>
 
-        <!-- HERO SECTION -->
-
-        <section class="hero section-container">
-
-            <p class="eyebrow">INFORMATION SYSTEMS STUDENT · ASPIRING DEVELOPER</p>
-
-            <h1>
-                Hello, I'm Amala.<br>
-                I build things for the web.
-            </h1>
-
-            <p class="hero-description">
-                I'm an Information Systems student interested in web development,
-                technology, and understanding how things work.
-                This is where I document my learning, projects, and progress.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="button button-dark">Explore my work ↗</a>
-                <a href="about.html" class="button button-light">More about me</a>
-            </div>
-
-            <div class="hero-note">
-                <span class="status-dot"></span>
-                Currently learning JavaScript and web development
-            </div>
-
-        </section>
-
-
-        <!-- PROJECTS SECTION -->
-
-        <section class="section-container projects-section" id="projects">
-
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">SELECTED WORK</p>
-                    <h2>Things I've built.</h2>
-                </div>
-
-                <p class="section-intro">
-                    A collection of projects I've worked on while learning
-                    programming and web development.
-                </p>
-            </div>
-
-
-            <div class="project-grid">
-
-                <article class="project-card">
-                    <div class="project-number">01 / WEB DEVELOPMENT</div>
-                    <h3>The Reading Room</h3>
-                    <p>
-                        A digital library concept featuring a searchable
-                        book catalogue and personal reading list.
-                    </p>
-                    <span class="project-tech">HTML · CSS · JavaScript</span>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-number">02 / WEB DEVELOPMENT</div>
-                    <h3>Weather App</h3>
-                    <p>
-                        A weather application project built to practise
-                        JavaScript, APIs, and displaying dynamic information.
-                    </p>
-                    <span class="project-tech">JavaScript · Webpack · API</span>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-number">03 / WEB DEVELOPMENT</div>
-                    <h3>Todo List</h3>
-                    <p>
-                        A task management application for creating,
-                        organising, and managing everyday tasks.
-                    </p>
-                    <span class="project-tech">JavaScript · Webpack</span>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-number">04 / JAVASCRIPT</div>
-                    <h3>Tic-Tac-Toe</h3>
-                    <p>
-                        A browser-based game created to practise
-                        JavaScript logic and DOM manipulation.
-                    </p>
-                    <span class="project-tech">HTML · CSS · JavaScript</span>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-number">05 / JAVASCRIPT</div>
-                    <h3>Etch-a-Sketch</h3>
-                    <p>
-                        An interactive drawing grid built to explore
-                        DOM manipulation and event handling.
-                    </p>
-                    <span class="project-tech">HTML · CSS · JavaScript</span>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-number">06 / WEB DEVELOPMENT</div>
-                    <h3>Restaurant Page</h3>
-                    <p>
-                        A restaurant website project focused on
-                        JavaScript modules and Webpack.
-                    </p>
-                    <span class="project-tech">JavaScript · Webpack · CSS</span>
-                    <a href="#" class="project-link">View project ↗</a>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS SECTION -->
-
-        <section class="skills-section">
-            <div class="section-container">
-
-                <p class="eyebrow">WHAT I'M WORKING WITH</p>
-                <h2>Tools & technologies.</h2>
-
-                <div class="skills-list">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                    <span>Python</span>
-                    <span>Java</span>
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Linux</span>
-                    <span>Databases</span>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- CONTACT SECTION -->
-
-        <section class="contact-section section-container" id="contact">
-
-            <p class="eyebrow">GET IN TOUCH</p>
-
-            <h2>Let's connect.</h2>
-
-            <p>
-                I'm always interested in learning, collaborating,
-                and connecting with people in technology.
-            </p>
-
-            <div class="contact-links">
-                <a href="https://github.com/amala2118" target="_blank">GitHub ↗</a>
-                <a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a>
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="footer">
-        <p>© <span id="year"></span> Amala Joseph</p>
-        <p>Designed and built with curiosity.</p>
-    </footer>
-
-
-    <script src="scripts/main.js"></script>
-
+  <footer><span>© <span id="year"></span> Amala Joseph</span><span>Built with HTML, CSS & JavaScript</span></footer>
 </body>
 </html>
